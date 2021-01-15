@@ -67,8 +67,7 @@ foreach ($resultSet as $row){
 			<td><input type="hidden" name="sp_mua" value="<?php echo $sp_mua; ?>">
 			</td>
 			<td><input type="hidden" name="tenkh" value="<?php echo $tenkh; ?>"></td>
-			<td><input type="hidden" name="cmnd" value="<?php echo $cmnd; ?>">
-			</td>
+			
 			<td><input type="hidden" name="email" value="<?php echo $email; ?>">
 			</td>
 			<td><input type="hidden" name="sdt" value="<?php echo $sdt; ?>">

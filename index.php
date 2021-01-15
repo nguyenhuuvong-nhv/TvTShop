@@ -10,6 +10,8 @@
 
         <link rel="stylesheet" type="text/css" href="public/css/slick.css"/>
         <link rel="stylesheet" type="text/css" href="public/css/slick-theme.css"/>
+        <script src="public/jquery/jRating.jquery.js"></script>
+        <link rel="stylesheet" href="public/jquery/jRating.jquery.css" type="text/css">
         <!--slide-->
         <link rel="stylesheet" type="text/css" href="public/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

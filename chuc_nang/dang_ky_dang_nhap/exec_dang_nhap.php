@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['submit'])) {
     $pass = md5(md5($_POST['password']));
-    $sqlquery = "select * from nguoidung where user=? and pass=?";
+    $sqlquery = "select * from nguoidung where user=? and pass=? and trangthai=1";
     $stmt = $db->prepare($sqlquery);
     $stmt->bindParam(1, $_POST['username']);
     $stmt->bindParam(2, $pass);

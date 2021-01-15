@@ -25,8 +25,8 @@
 		<td><?php echo $row['name']; ?></td>
 		<td><img src="../images/slideshow/<?php echo $row['name']; ?>" width="360px" height="150px" alt=""></td>
 		<td><?php echo $row['note']; ?></td>
-		<td><a href="?menu=sua_anh_slide&id=<?php echo $row['id']; ?>">Sửa</a></td>
-		<td><a onclick="return confirm('Bạn có mún xóa ảnh này?');" href="?menu=xoa_anh_slide&id=<?php echo $row['id']; ?>">Xóa</a></td>
+		<td><a class='submit' href="?menu=sua_anh_slide&id=<?php echo $row['id']; ?>">Sửa</a></td>
+		<td><a class='submit' onclick="return confirm('Bạn có mún xóa ảnh này?');" href="?menu=xoa_anh_slide&id=<?php echo $row['id']; ?>">Xóa</a></td>
 	</tr>
 <?php } ?>
 </table

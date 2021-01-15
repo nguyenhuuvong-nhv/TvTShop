@@ -32,16 +32,16 @@
             <td><?php echo $row['diachi']; ?></td>
             <td><?php echo $row['sdt']; ?></td>
             <td><?php echo $row['trangthai']; ?></td>
-            <td class="center"><a class='submit' href="cap-nhat-thong-tin-user.php?id=<?php echo($row[0]); ?>">Cập nhật</a></td>
+            <td class="center"><a class='submit' href="?menu=update_user&id=<?php echo($row['user']); ?>">Cập nhật</a></td>
 
             <?php
-            if($row['trangthai'] == '0'){
+            if($row['trangthai'] == '1'){
             ?>
-            <td class="center"><a onclick="return confirm('Vô Hiệu Hóa User này!');" class='submit' href="disable-user.php?id=<?php echo($row['IdND']); ?>">Vô Hiệu Hóa</a></td>
+            <td class="center"><a onclick="return confirm('Vô Hiệu Hóa User này!');" class='submit' href="?menu=disable_user&id=<?php echo($row['user']); ?>">Khóa</a></td>
             <?php
             }else{
             ?>
-            <td class="center"><a onclick="return confirm('Hủy Bỏ Vô Hiệu Hóa User này!');" class='submit' href="enable-user.php?id=<?php echo($row['IdND']); ?>">Hủy</a></td>
+            <td class="center"><a onclick="return confirm('Hủy Bỏ Vô Hiệu Hóa User này!');" class='submit' href="?menu=enable_user&id=<?php echo($row['user']); ?>">Mở</a></td>
             <?php
             }
             ?>

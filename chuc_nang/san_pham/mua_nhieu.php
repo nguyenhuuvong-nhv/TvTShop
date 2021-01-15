@@ -1,6 +1,5 @@
 <div class="box-left box-menu">
     <h3 class="box-title"><i class="fa fa-warning"></i>  Sản phẩm mua nhiều</h3>
-    <!--  <marquee direction="down" onmouseover="this.stop()" onmouseout="this.start()"  > -->
     <ul>
         <?php
         $sqlquery = "select * from san_pham order by mua_nhieu desc limit 0,4"; 
@@ -17,7 +16,7 @@
                 <div class="info pull-right">
                     <p class="name"> <?php echo $row['tensp']; ?></p >
                     <b class="price"><?php echo number_format($row['giasp'],0,",",".")."đ"; ?></b><br>
-                    <span class="view"><i class="fa fa-eye"></i> 100000 : <i class="fa fa-heart-o"></i> 10</span>
+                    <span class="view"><i class="fa fa-shopping-basket"></i> <?php echo $row['mua_nhieu']?> : <i class="fa fa-heart-o"></i> <?php echo $row['yeu_thich']?></span>
                 </div>
             </a>
         </li>

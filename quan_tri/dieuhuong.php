@@ -12,6 +12,18 @@ if (isset($_GET['menu'])) {
         case 'exec_them_sp':
             include('./chucnang/quan_li_san_pham/exec_them_sp.php');
             break;
+        case 'chi_tiet_sp':
+            include('./chucnang/quan_li_san_pham/chi_tiet.php');
+            break;
+        case 'cap_nhat_sp':
+            include('./chucnang/quan_li_san_pham/cap_nhat_sp.php');
+            break;
+        case 'exec_cap_nhat_sp':
+            include('./chucnang/quan_li_san_pham/exec_cap_nhat_sp.php');
+            break;
+        case 'xoa_sp':
+            include('./chucnang/quan_li_san_pham/xoa_sp.php');
+            break;
         case 'quanli_danh_muc':
             include('./chucnang/quan_li_danh_muc/quan-li-danh-muc.php');
             break;
@@ -24,6 +36,14 @@ if (isset($_GET['menu'])) {
         case 'quanli_user':
             include('./chucnang/quan_li_user/quan-li-user.php');
             break;
+        case 'update_user':
+            include('./chucnang/quan_li_user/update_user.php');
+            break;
+        case 'exec_update_user':
+            include('./chucnang/quan_li_user/exec_update_user.php');
+            break;
+        
+        
         case 'logout':
             include('./chucnang/quan_tri/logout.php');
             break;
@@ -60,6 +80,24 @@ if (isset($_GET['menu'])) {
         case 'exec_sua_menu_ngang':
             include('./chucnang/quan_li_menu_ngang/exec_sua_menu_ngang.php');
             break;
+        case 'quanli_hoa_don':
+            include('./chucnang/quan_li_hoa_don/hoa_don.php');
+            break;
+        case 'chi_tiet_hoa_don':
+            include('./chucnang/quan_li_hoa_don/chi_tiet_hoa_don.php');
+            break;
+        case 'xu_ly':
+            include('./chucnang/quan_li_hoa_don/xu_ly.php');
+            break;
+        case 'hoanthanh':
+            include('./chucnang/quan_li_hoa_don/hoanthanh.php');
+            break;
+        case 'xoa':
+            include('./chucnang/quan_li_hoa_don/xoa.php');
+            break;
+        
+        
+        
     }
 } else {
     include('./chucnang/quan_li_san_pham/quan_li_san_pham.php');

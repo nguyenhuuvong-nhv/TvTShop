@@ -16,10 +16,6 @@
         }
         $avg = $avg * 10;
     }
-    $sql = "update san_pham set xem_nhieu=xem_nhieu + 1 where masp= ? ";
-    $stmt = $db->prepare($sqlquery);
-    $stmt->bindParam(1, $_GET['masp']);
-    $stmt->execute();
     ?>	
     <script type="text/javascript">
 
@@ -78,14 +74,14 @@
                     <span style="color: red; font-weight: bold; font-size: 26px;"><?php echo number_format($row['giasp'], 0, ",", ".") . "đ"; ?></span></br>
                     <span style="font-size: 14px; ">(Giá đã bao gồm 10% VAT)</span><br>
                     <span style="color: black; font-size: 16px; font-weight: bold; margin-top: 15px;  ">Trạng thái: <?php
-    if ($row['soluong'] > 0) {
-        echo '<span style="color: blue; font-size: 18px; ">Còn hàng</span>';
-    } else {
-        echo '<span style="color: red; font-size: 18px; ">Hết hàng</span>';
-    }
-    ?></span><br>
-                    <span style="margin-top: 10px;" >Số lượng: <input type="text" style="width: 50px;
-                                                                      height: 36px; border-radius: 10px; border: solid silver 0.1px; padding-left: 10px; " size="4" name="soluong" value="1"></span><br>
+                        if ($row['soluong'] > 0) {
+                            echo '<span style="color: blue; font-size: 18px; ">Còn hàng</span>';
+                        } else {
+                            echo '<span style="color: red; font-size: 18px; ">Hết hàng</span>';
+                        }
+                        ?></span><br>
+                    <span style="margin-top: 10px;" >Số lượng: <input type="text" style="width: 40px;
+                                                                      height: 30px; border-radius: 5px; border: solid silver 0.1px; padding-left: 15px; " size="4" name="soluong" value="1"></span><br>
                     <p class="alert alert-success" style="margin-top: 10px; ">
                         <span>Khuyến mãi tặng kèm:</span><br>
                         <span><span style="margin-left: 10px;" class="fa fa-check"></span> Sạc dự phòng Romoss 10400mAh.</span><br>
@@ -165,8 +161,8 @@
                                     <label>Ngôn ngữ:</label>
                                 </td>
                                 <td>
-<?php echo $row['he_dieu_hanh']; ?><br>
-<?php echo $row['ngon_ngu']; ?>
+                                    <?php echo $row['he_dieu_hanh']; ?><br>
+                                    <?php echo $row['ngon_ngu']; ?>
                                 </td>
                             </tr>
                             <tr>
@@ -179,8 +175,8 @@
                                 <td>
                                     <?php echo $row['man_hinh']; ?><br>
                                     <?php echo $row['loai_man_hinh']; ?><br>
-<?php echo $row['do_phan_giai']; ?><br>
-<?php echo $row['kich_thuoc_man_hinh']; ?>
+                                    <?php echo $row['do_phan_giai']; ?><br>
+                                    <?php echo $row['kich_thuoc_man_hinh']; ?>
                                 </td>
                             </tr>
                             <tr>
@@ -197,8 +193,8 @@
                                     <?php echo $row['toc_do_cpu']; ?><br>
                                     <?php echo $row['chipset']; ?><br>
                                     <?php echo $row['so_nhan']; ?><br>
-<?php echo $row['ram']; ?><br>
-<?php echo $row['chip_do_hoa']; ?>
+                                    <?php echo $row['ram']; ?><br>
+                                    <?php echo $row['chip_do_hoa']; ?>
                                 </td>
                             </tr>
                             <tr>
@@ -207,8 +203,8 @@
                                     <label>Thẻ nhớ:</label>
                                 </td>
                                 <td>
-<?php echo $row['bo_nho_trong']; ?><br>
-<?php echo $row['the_nho']; ?>
+                                    <?php echo $row['bo_nho_trong']; ?><br>
+                                    <?php echo $row['the_nho']; ?>
                                 </td>
                             </tr>
                             <tr>
@@ -223,8 +219,8 @@
                                     <?php echo $row['camera_truoc']; ?><br>
                                     <?php echo $row['camera_sau']; ?><br>
                                     <?php echo $row['quay_phim']; ?><br>
-<?php echo $row['video_call']; ?><br>
-<?php echo $row['den_flash']; ?>
+                                    <?php echo $row['video_call']; ?><br>
+                                    <?php echo $row['den_flash']; ?>
                                 </td>
                             </tr>
                             <tr>
@@ -245,8 +241,8 @@
                                     <?php echo $row['gprs_edge']; ?><br>
                                     <?php echo $row['bluetooth']; ?><br>
                                     <?php echo $row['gps']; ?><br>
-<?php echo $row['wifi']; ?><br>
-<?php echo $row['danh_ba']; ?>
+                                    <?php echo $row['wifi']; ?><br>
+                                    <?php echo $row['danh_ba']; ?>
                                 </td>
                             </tr>
                             <tr>
@@ -261,8 +257,8 @@
                                     <?php echo $row['da_phuong_tien']; ?><br>
                                     <?php echo $row['chuc_nang_khac']; ?><br>
                                     <?php echo $row['kich_thuoc']; ?><br>
-<?php echo $row['khoi_luong']; ?><br>
-<?php echo $row['pin']; ?>
+                                    <?php echo $row['khoi_luong']; ?><br>
+                                    <?php echo $row['pin']; ?>
                                 </td>
                             </tr>
                         </table>
@@ -271,7 +267,7 @@
                         <?php include('chuc_nang/binh_luan/binh_luan.php'); ?>
                     </div>
                     <div id="danh_gia" class="tab-pane fade in">
-<?php include('chuc_nang/rate/rate_form.php'); ?>
+                        <?php include('chuc_nang/rate/rate_form.php'); ?>
                     </div>
                 </div>
             </div>
@@ -289,7 +285,7 @@
                     $start = 1;
                     $page = $page - 1;
                     $limit = 5;
-                    $sqlquery = "select * from binh_luan where masp= ? limit " . $page . "," . $limit;
+                    $sqlquery = "select * from binh_luan where masp=?";
                     $stmt = $db->prepare($sqlquery);
                     $stmt->bindParam(1, $_GET['masp']);
                     $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -302,8 +298,11 @@
                     $total = $total / $limit;
                     $total = ceil($total);
                     $start = $limit * $page;
+                    $sqlquery = "select * from binh_luan where masp= ? limit ?,?";
                     $stmt = $db->prepare($sqlquery);
                     $stmt->bindParam(1, $_GET['masp']);
+                    $stmt->bindParam(2, $start, \PDO::PARAM_INT);
+                    $stmt->bindParam(3, $limit, \PDO::PARAM_INT);
                     $stmt->setFetchMode(PDO::FETCH_ASSOC);
                     $stmt->execute();
                     $resultSet = $stmt->fetchAll();
@@ -315,7 +314,7 @@
                                 <span style="padding-left: 10px;"><?php echo $row['noi_dung']; ?></span>
                             </td>
                         </tr>
-<?php } ?>
+                    <?php } ?>
                     <tr>
                         <td align="center">
                             <nav>
@@ -323,8 +322,8 @@
                                     <?php
                                     for ($i = 1; $i <= $total; $i++) {
                                         ?>
-                                        <li><a href="?menu=&page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
-<?php } ?>
+                                        <li><a href="?menu=product_info&masp=<?php echo $_GET['masp']; ?>&page=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                                    <?php } ?>
                                 </ul>
                             </nav>
                         </td>

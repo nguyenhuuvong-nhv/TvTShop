@@ -11,11 +11,11 @@
 
 			</tr>
 			<tr>
-				<td><input type="text" id="name" name="name" required ></td>
-				<td><input type="text" id="cost" name="cost" required ></td>
-				<td><input type="text" id="soluong" name="soluong" required ></td>
+				<td><input type="text" id="name" name="name"  ></td>
+				<td><input type="text" id="cost" name="cost"  ></td>
+				<td><input type="text" id="soluong" name="soluong"  ></td>
 				<td>
-					<select name="loaisp" id="loaisp"  required >
+					<select name="loaisp" id="loaisp"   >
 					<?php
 						include('../connect.php');
 						$sqlquery = "select * from danhmucsp";
@@ -44,7 +44,7 @@
 					<label for="image5">Ảnh 5:</label>
 				</td>
 				<td>
-					<input type="file" id="image" name="image"  required ><br>
+					<input type="file" id="image" name="image"   ><br>
 					<input type="file" id="image2" name="image1"><br>
 					<input type="file" id="image3" name="image2"><br>
 					<input type="file" id="image4" name="image3"><br>
@@ -63,10 +63,10 @@
 				<td><label for="loai_man_hinh">Loại màn hình</label></td>
 			</tr>
 			<tr>
-				<td><input type="text" id="man_hinh" name="man_hinh" required ></td>
-				<td><input type="text" id="do_phan_giai" name="do_phan_giai" required ></td>
-				<td><input type="text" id="kich_thuoc_man_hinh" name="kich_thuoc_man_hinh" required ></td>
-				<td><input type="text" id="loai_man_hinh" name="loai_man_hinh" required ></td>
+				<td><input type="text" id="man_hinh" name="man_hinh"  ></td>
+				<td><input type="text" id="do_phan_giai" name="do_phan_giai"  ></td>
+				<td><input type="text" id="kich_thuoc_man_hinh" name="kich_thuoc_man_hinh"  ></td>
+				<td><input type="text" id="loai_man_hinh" name="loai_man_hinh"  ></td>
 			</tr>
 			<tr>
 				<td colspan="4"><hr></td>
@@ -78,10 +78,10 @@
 				<td><label for="bo_nho_trong">Bộ nhớ trong</label></td>
 			</tr>
 			<tr>
-				<td><input type="text" id="ngon_ngu" name="ngon_ngu" required ></td>
-				<td><input type="text" id="he_dieu_hanh" name="he_dieu_hanh" required ></td>
-				<td><input type="text" id="ram" name="ram" required ></td>
-				<td><input type="text" id="bo_nho_trong" name="bo_nho_trong" required ></td>
+				<td><input type="text" id="ngon_ngu" name="ngon_ngu"  ></td>
+				<td><input type="text" id="he_dieu_hanh" name="he_dieu_hanh"  ></td>
+				<td><input type="text" id="ram" name="ram"  ></td>
+				<td><input type="text" id="bo_nho_trong" name="bo_nho_trong"  ></td>
 			</tr>
 			<tr>
 				<td colspan="4"><hr></td>
@@ -93,10 +93,10 @@
 				<td><label for="toc_do_cpu">Tốc độ CPU</label></td>
 			</tr>
 			<tr>
-				<td><input type="text" id="cpu" name="cpu" required ></td>
-				<td><input type="text" id="chipset" name="chipset" required ></td>
-				<td><input type="text" id="so_nhan" name="so_nhan" required ></td>
-				<td><input type="text" id="toc_do_cpu" name="toc_do_cpu" required ></td>
+				<td><input type="text" id="cpu" name="cpu"  ></td>
+				<td><input type="text" id="chipset" name="chipset"  ></td>
+				<td><input type="text" id="so_nhan" name="so_nhan"  ></td>
+				<td><input type="text" id="toc_do_cpu" name="toc_do_cpu"  ></td>
 			</tr>
 			<tr>
 				<td colspan="4"><hr></td>
@@ -108,10 +108,10 @@
 				<td><label for="the_nho">Thẻ nhớ</label></td>
 			</tr>
 			<tr>
-				<td><input type="text" id="chip_do_hoa" name="chip_do_hoa" required ></td>
-				<td><input type="text" id="camera_truoc" name="camera_truoc" required  ></td>
-				<td><input type="text" id="camera_sau" name="camera_sau" required ></td>
-				<td><input type="text" id="the_nho" name="the_nho" required ></td>
+				<td><input type="text" id="chip_do_hoa" name="chip_do_hoa"  ></td>
+				<td><input type="text" id="camera_truoc" name="camera_truoc"   ></td>
+				<td><input type="text" id="camera_sau" name="camera_sau"  ></td>
+				<td><input type="text" id="the_nho" name="the_nho"  ></td>
 			</tr>
 			<tr>
 				<td colspan="4"><hr></td>
@@ -123,7 +123,7 @@
 				<td><label for="den_flash">Đèn Flash</label></td>
 			</tr>
 			<tr>
-				<td><input type="text" id="danh_ba" name="danh_ba" required >
+				<td><input type="text" id="danh_ba" name="danh_ba"  >
 				<td>
 					<select name="quay_phim" id="quay_phim">
 						<option value="có">Có</option>
@@ -153,7 +153,7 @@
 				<td><label for="so_sim">Số sim</label></td>
 			</tr>
 			<tr>
-				<td><input type="text" id="da_phuong_tien" name="da_phuong_tien" required ></td>
+				<td><input type="text" id="da_phuong_tien" name="da_phuong_tien"  ></td>
 				<td><select name="single3g4g" id="single3g_4g">
 						<option value="3G">3G</option>
 						<option value="3G/4G">3G/4G</option>
@@ -166,7 +166,7 @@
 						<option value="NanoSim">NanoSim</option>
 					</select>
 				</td>
-				<td><input type="text" id="so_sim" name="so_sim" required ></td>
+				<td><input type="text" id="so_sim" name="so_sim"  ></td>
 			</tr>
 			<tr>
 				<td colspan="4"><hr></td>
@@ -213,10 +213,10 @@
 				<td><label for="pin">Pin</label></td>
 			</tr>
 			<tr>
-				<td><input type="text" id="chuc_nang_khac" name="chuc_nang_khac" required  ></td>
-				<td><input type="text" id="kich_thuoc" name="kich_thuoc" required  required ></td>
-				<td><input type="text" id="khoi_luong" name="khoi_luong" required ></td>
-				<td><input type="text" id="pin" name="pin" required ></td>
+				<td><input type="text" id="chuc_nang_khac" name="chuc_nang_khac"   ></td>
+				<td><input type="text" id="kich_thuoc" name="kich_thuoc"    ></td>
+				<td><input type="text" id="khoi_luong" name="khoi_luong"  ></td>
+				<td><input type="text" id="pin" name="pin"  ></td>
 			</tr>
 		</table>
 		<table>

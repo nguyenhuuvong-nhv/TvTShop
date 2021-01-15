@@ -17,6 +17,7 @@ if (isset($login)) {
 		foreach ($resultSet as $row) {
 			$_SESSION['user'] = $row['name'];
 			$_SESSION['pass'] = $row['pass'];
+                        $_SESSION['quyen_truy_cap']= $row['quyen_truy_cap'];
 		}
 		if (isset($_SESSION['user'])) {
 			echo "<script>alert('Login Successfull.'); </script>";

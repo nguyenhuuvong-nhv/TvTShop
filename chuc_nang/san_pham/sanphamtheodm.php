@@ -56,7 +56,7 @@ $dm = $stmt->fetch();
                         </div>
                         <div class="buy" style="margin-left: 25px" >
                             <a class="btn btn-primary" href="?menu=product_info&masp=<?php echo $row['masp']; ?>">Chi tiết</a>
-                            <a class="btn btn-warning" href="?menu=addcart&masp=<?php echo $row['masp']; ?>&soluong=1"><b class="fa fa-cart-plus"></b></a>
+                            <a class="btn btn-warning" href="?menu=add_cart&masp=<?php echo $row['masp']; ?>&soluong=1"><b class="fa fa-cart-plus"></b></a>
                         </div>
                     </div>
 

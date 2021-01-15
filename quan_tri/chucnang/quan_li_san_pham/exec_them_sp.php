@@ -3,7 +3,6 @@
 ?>
 <?php
 	if(isset($_POST['submit'])){
-	include('database/connect.php');
 	$img_location ='../images/';
 	if($_FILES['image']['name']!=""){
 		$image = rand().$_FILES['image']['name'];

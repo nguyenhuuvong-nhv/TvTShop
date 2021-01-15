@@ -52,6 +52,6 @@
 }
 }
 	if(isset($_POST['cancel'])){
-		header('location:index.php?menu=ql_slideshow');
+		header('location:index.php?menu=quanli_slideshow');
 	}
 ?>

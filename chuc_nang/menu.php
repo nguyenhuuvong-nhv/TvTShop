@@ -59,6 +59,31 @@ elseif(isset($_GET['menu'])) {
         case 'khach_hang':
             include('chuc_nang/gio_hang/thong_tin_khach_hang.php');
             break;
+        case 'hoa_don':
+            include('chuc_nang/gio_hang/hoa_don.php');
+            break;
+        case 'theo_doi_dh':
+            include('chuc_nang/gio_hang/theo_doi_dh.php');
+            break;
+        case 'chi_tiet_dh':
+            include('chuc_nang/gio_hang/chi_tiet_dh.php');
+            break;
+        case 'huy_don_hang':
+            include('chuc_nang/gio_hang/huy_don_hang.php');
+            break;
+        case 'yeu_thich':
+            include('chuc_nang/san_pham/yeu_thich.php');
+            break;
+        case 'binh_luan':
+            include('chuc_nang/binh_luan/exec_binh_luan.php');
+            break;
+        case 'rate':
+            include('chuc_nang/rate/rate.php');
+            break;
+        case 'ngan_luong':
+            include('chuc_nang/ngan_luong/thanh_toan.php');
+            break;
+        
     }
 } else {
     include('view/slide_show.php');

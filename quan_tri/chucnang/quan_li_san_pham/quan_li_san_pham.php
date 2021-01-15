@@ -11,10 +11,9 @@
             <th>STT</th>
             <th>Tên SP</th>
             <th>Giá</th>
-            <th >Số Lượng</th>
             <th >Ảnh</th>
             <th>Loại SP</th>
-            <th>Nổi Bật</th>
+            <th>NB</th>
             <th>Đã Mua</th>
             
             <th></th>   
@@ -37,7 +36,6 @@
             <td><?php echo $i++; ?></td>
             <td><?php echo $row['tensp']; ?></td>
             <td><?php echo $row['giasp']; ?></td>
-            <td><?php echo $row['soluong']; ?></td>
             <td> <img src="../images/<?php echo $row['img']; ?>" width="80px" height="80px" alt=""></td>
             
             <?php 
@@ -57,9 +55,9 @@
             
             <td><?php echo $row['noi_bat']; ?></td>
             <td><?php echo $row['mua_nhieu']; ?></td>
-            <td class="center"><a class='submit' href="?menu=cap_nhat_danh_muc&id=<?php echo($row['id']); ?>">Chi Tiết</a></td>
-            <td class="center"><a class='submit' href="?menu=cap_nhat_danh_muc&id=<?php echo($row['id']); ?>">Cập Nhật</a></td>
-            <td class="center"><a onclick="return confirm('Xóa danh mục này!');" class='submit' href="?menu=xoa_danh_muc&id=<?php echo($row['id']); ?>">Xóa</a></td>
+            <td class="center"><a class='submit' href="?menu=chi_tiet_sp&masp=<?php echo($row['masp']); ?>">Chi Tiết</a></td>
+            <td class="center"><a class='submit' href="?menu=cap_nhat_sp&masp=<?php echo($row['masp']); ?>">Cập Nhật</a></td>
+            <td class="center"><a onclick="return confirm('Xóa danh mục này!');" class='submit' href="?menu=xoa_sp&masp=<?php echo($row['masp']); ?>">Xóa</a></td>
         </tr>
         <?php
         }
