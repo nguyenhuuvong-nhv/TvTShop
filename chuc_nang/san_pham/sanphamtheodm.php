@@ -21,7 +21,7 @@ $dm = $stmt->fetch();
             }
             $start = 1;
             $page = $page - 1;
-            $limit = 12;
+            $limit = 10;
             $sqlquery = "select * from san_pham where loaisp = ?";
             $stmt = $db->prepare($sqlquery);
             $stmt->bindParam(1, $iddm, PDO::PARAM_INT);
@@ -72,7 +72,7 @@ $dm = $stmt->fetch();
 
                         <?php
                         for ($i = 1; $i <= $total; $i++) {
-                            echo '<li> <a href="?menu=san_pham&id='.$iddm.'&page=' . $i . '">' . $i . '</a> <li>  ';
+                            echo '<li> <a href="?menu=san_pham&id=' . $iddm . '&page=' . $i . '">' . $i . '</a> <li>  ';
                         }
                         ?>
                     </ul>

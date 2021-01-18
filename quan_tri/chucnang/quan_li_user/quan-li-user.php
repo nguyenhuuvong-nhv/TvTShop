@@ -7,7 +7,7 @@
             <th>Địa Chỉ</th>
             <th>Số Điện Thoại</th>
             <th>Trạng Thái</th>
-            <th></th>
+            <th><a class="submit" href="?menu=them_nhan_vien"> Thêm nhân viên </a></th>
             <th ></th>
         </tr>
     </thead>

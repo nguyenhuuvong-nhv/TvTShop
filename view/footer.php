@@ -34,7 +34,7 @@
                 <div class="col-md-3" id="ft-about">
 
                     <p>Sự tin tưởng của quý khách hàng là động lực cho chúng tôi mang đến nhiều sản
-                    phẩm chất lượng với giá cả tốt nhất. Trân trọng cảm ơn !</p>
+                        phẩm chất lượng với giá cả tốt nhất. Trân trọng cảm ơn !</p>
                 </div>
                 <div class="col-md-3 box-footer" >
                     <h3 class="tittle-footer">my accout</h3>
@@ -100,39 +100,44 @@
             </div>
         </div>
         <!--Start of AutoAds Tracking Code-->
-        <script id='autoAdsMaxLead-widget-script' src='https://cdn.autoads.asia/scripts/autoads-maxlead-widget.js?business_id=0F43584527D8451288408F4DC2CABFD9' type='text/javascript' charset='UTF-8' async></script>
-        <!--End of AutoAds Tracking Code-->
+<script id='autoAdsMaxLead-widget-script' src='https://cdn.autoads.asia/scripts/autoads-maxlead-widget.js?business_id=0F43584527D8451288408F4DC2CABFD9' type='text/javascript' charset='UTF-8' async></script>
+<!--End of AutoAds Tracking Code-->
     </section>
     <div id="back-to-top" class="back-to-top" data-toggle="tooltip" data-placement="left" title="Trở lên đầu trang"><span class="glyphicon glyphicon-circle-arrow-up text-primary"></span></div>
 
 </div>
 <style>
-  .back-to-top {
-    position: fixed;
-    top: auto;
-    left: auto;
-    right: 100px;
-    bottom: 40px;
-    font-size: 32px;
-    opacity: 0.8;
-    z-index: 9999;
-    cursor: pointer;
-}
+    .back-to-top {
+        position: fixed;
+        top: auto;
+        left: auto;
+        right: 100px;
+        bottom: 40px;
+        font-size: 32px;
+        opacity: 0.8;
+        z-index: 9999;
+        cursor: pointer;
+    }
 
-.back-to-top:hover {
-    opacity: 1;
-}  
+    .back-to-top:hover {
+        opacity: 1;
+    }  
 </style>
 <script>
-jQuery(document).ready(function() {
-var offset = 220;
-var duration = 500;
-jQuery(window).scroll(function() {
-if (jQuery(this).scrollTop() > offset) {
-jQuery('.back-to-top').fadeIn(duration);} else {
-jQuery('.back-to-top').fadeOut(duration);}});
-jQuery('.back-to-top').click(function(event) {
-event.preventDefault();
-jQuery('html, body').animate({scrollTop: 0}, duration);
-return false;})});</script>
+    jQuery(document).ready(function () {
+        var offset = 220;
+        var duration = 500;
+        jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > offset) {
+                jQuery('.back-to-top').fadeIn(duration);
+            } else {
+                jQuery('.back-to-top').fadeOut(duration);
+            }
+        });
+        jQuery('.back-to-top').click(function (event) {
+            event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+            return false;
+        })
+    });</script>
 </script>

@@ -17,8 +17,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="shortcut icon" type="image/png" href="images/img_logo.png"/>
         <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
-
+        
     </head>
+    
     <body>
         <div id="wrapper">
             <?php include 'view/header.php'; ?>
@@ -39,6 +40,7 @@
                 
             </div>
             <?php include 'view/footer.php'; ?>
+            
         </div>
         <script  src="js/slick.min.js"></script>
         

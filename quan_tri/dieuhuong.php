@@ -48,6 +48,13 @@ if (isset($_GET['menu'])) {
         case 'enable_user':
             include('./chucnang/quan_li_user/enable_user.php');
             break;
+        case 'them_nhan_vien':
+            include('./chucnang/quan_li_user/them_nhan_vien.php');
+            break;
+        case 'exec_them_nhan_vien':
+            include('./chucnang/quan_li_user/exec_them_nhan_vien.php');
+            break;
+        
         
         case 'logout':
             include('./chucnang/quan_tri/logout.php');
