@@ -9,7 +9,7 @@
 <div id="carousel-id" class="carousel slide" data-ride="carousel">
 	<ol class="carousel-indicators">
 		<?php 
-			$sqlquery= "select * from slideshow";
+			$sqlquery= "select * from slideshow where loai='sl'";
 			$stmt = $db->prepare($sqlquery);
 			$stmt->setFetchMode(PDO::FETCH_ASSOC);
 			$stmt->execute();
@@ -27,7 +27,7 @@
 	<div class="carousel-inner">
 		<?php 
 			
-			$sqlquery= "select * from slideshow";
+			$sqlquery= "select * from slideshow where loai='sl'";
 			$stmt = $db->prepare($sqlquery);
 			$stmt->setFetchMode(PDO::FETCH_ASSOC);
 			$stmt->execute();

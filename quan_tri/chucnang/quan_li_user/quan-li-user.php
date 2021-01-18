@@ -4,8 +4,6 @@
             <th class="cart_product">STT</th>
             <th>Họ Và Tên</th>
             <th>Tên Đăng Nhập</th>
-
-            <th>Mật Khẩu</th>
             <th>Địa Chỉ</th>
             <th>Số Điện Thoại</th>
             <th>Trạng Thái</th>
@@ -15,7 +13,7 @@
     </thead>
     <tbody>
         <?php
-        $sqlquery = "select * from nguoidung";
+        $sqlquery = "select * from nguoidung where ma_quyen !=1";
         $stmt = $db->prepare($sqlquery);
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $stmt->execute();
@@ -27,8 +25,6 @@
             <td><?php echo $i++; ?></td>
             <td><?php echo $row['hoten']; ?></td>
             <td><?php echo $row['user']; ?></td>
-            
-            <td><?php echo $row['pass']; ?></td>
             <td><?php echo $row['diachi']; ?></td>
             <td><?php echo $row['sdt']; ?></td>
             <td><?php echo $row['trangthai']; ?></td>

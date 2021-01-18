@@ -74,6 +74,8 @@ foreach ($resultSet as $row){
 			</td>
 			<td><input type="hidden" name="diachi" value="<?php echo $diachi; ?>">
 			<input type="hidden" name="list_id" value="<?php echo $list_id; ?>">
+                        <td><input type="hidden" name="tong_tien" value="<?php echo $tg; ?>">
+			</td>
 			</td>
 		</tr>
 		<tr >

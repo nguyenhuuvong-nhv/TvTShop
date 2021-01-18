@@ -14,7 +14,7 @@
 	
 <?php
 	include('../database/connect.php');
-	$sql= "select * from slideshow";
+	$sql= "select * from slideshow where loai='sl'";
 	$stmt= $db->prepare($sql);
 	$stmt->setFetchMode(PDO::FETCH_ASSOC);
 	$stmt->execute(); 

@@ -42,7 +42,12 @@ if (isset($_GET['menu'])) {
         case 'exec_update_user':
             include('./chucnang/quan_li_user/exec_update_user.php');
             break;
-        
+        case 'disable_user':
+            include('./chucnang/quan_li_user/disable_user.php');
+            break;
+        case 'enable_user':
+            include('./chucnang/quan_li_user/enable_user.php');
+            break;
         
         case 'logout':
             include('./chucnang/quan_tri/logout.php');
@@ -64,6 +69,27 @@ if (isset($_GET['menu'])) {
             break;
         case 'exec_sua_anh_slide':
             include('./chucnang/quan_li_slideshow/exec_sua_anh_slide.php');
+            break;
+        case 'quanli_quang_cao':
+            include('./chucnang/quan_li_quang_cao/ql_quang_cao.php');
+            break;
+        case 'them_anh_qc':
+            include('./chucnang/quan_li_quang_cao/them_anh_qc.php');
+            break;
+        case 'sua_anh_qc':
+            include('./chucnang/quan_li_quang_cao/sua_anh_qc.php');
+            break;
+        case 'exec_sua_anh_qc':
+            include('./chucnang/quan_li_quang_cao/exec_sua_anh_qc.php');
+            break;
+        case 'xoa_anh_qc':
+            include('./chucnang/quan_li_quang_cao/xoa_anh_qc.php');
+            break;
+        
+        
+        
+        case 'exec_them_anh_qc':
+            include('./chucnang/quan_li_quang_cao/exec_them_anh_qc.php');
             break;
         case 'quanli_menu_ngang':
             include('./chucnang/quan_li_menu_ngang/quan_li_menu_ngang.php');
@@ -95,11 +121,18 @@ if (isset($_GET['menu'])) {
         case 'xoa':
             include('./chucnang/quan_li_hoa_don/xoa.php');
             break;
+        case 'thong_ke':
+            include('./chucnang/thong_ke/thong_ke.php');
+            break;
         
         
         
     }
 } else {
-    include('./chucnang/quan_li_san_pham/quan_li_san_pham.php');
+    if ($_SESSION['quyen_truy_cap'] == 1){
+        include('./chucnang/thong_ke/thong_ke.php');
+    }
+    elseif($_SESSION['quyen_truy_cap'] == 2) {
+    include('./chucnang/quan_li_san_pham/quan_li_san_pham.php');}
 }
 ?>

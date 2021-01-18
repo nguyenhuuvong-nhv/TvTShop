@@ -13,7 +13,7 @@
 		</tr>
 		<tr>
 			<td><label for="pass">Mật khẩu:</label></td>
-                        <td><input  class="form-control" type="password" name="password" id="pass" placeholder="Nhập mật khẩu.." required minlength="6" ></td>
+                        <td><input  class="form-control" type="password" name="password" id="pass" placeholder="Nhập mật khẩu.." required minlength="5" ></td>
 		</tr>
 		<tr>
 			<td colspan="2" align="center"><input type="submit" name="submit" class="btn btn-primary" value="Đăng nhập"></td>

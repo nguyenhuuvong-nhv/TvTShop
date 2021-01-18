@@ -19,8 +19,11 @@ include('database/connect.php');?>
                                     <ul id="header-submenu">
                                         <?php if (isset($_SESSION['username'])) { ?>
                                             <li><a href="?menu=my_user">Thông tin</a></li>
-                                            <li><a href="?menu=theo_doi_dh">Đơn hàng</a></li>
-                                            <li><a href="?menu=logout">Đăng xuất</a></li>   <?php } ?> 
+                                            <li><a href="?menu=theo_doi_dh">Lịch sử đơn hàng</a></li>
+                                            <li><a href="?menu=logout">Đăng xuất</a></li>   
+                                         <?php }if(isset($_SESSION['ma_quyen'])){if($_SESSION['ma_quyen'] != 3){ ?>  
+                                            <li><a href="?menu=quan_tri">Trang quản trị</a></li>
+                                         <?php } }?> 
                                         <li><a href="?menu=dang_ky">Đăng ký</a></li>
                                         
                                     </ul>

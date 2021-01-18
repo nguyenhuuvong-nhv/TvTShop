@@ -83,7 +83,9 @@ elseif(isset($_GET['menu'])) {
         case 'ngan_luong':
             include('chuc_nang/ngan_luong/thanh_toan.php');
             break;
-        
+        case 'quan_tri':
+            echo "<script> location.href='/quan_tri/index.php';  </script>";
+            break;
     }
 } else {
     include('view/slide_show.php');

@@ -28,7 +28,7 @@ if ($check1 == 1) {
     $number = $_POST['number'];
     $gt = $_POST['gioitinh'];
 
-    $sqlquery = "insert into nguoidung(hoten,user,pass,gioitinh,sdt,email,diachi) values(?,?,?,?,?,?,?)";
+    $sqlquery = "insert into nguoidung(hoten,user,pass,gioitinh,sdt,email,diachi,ma_quyen) values(?,?,?,?,?,?,?,3)";
     $stmt = $db->prepare($sqlquery);
 
     $stmt->bindParam(1, $hoten);

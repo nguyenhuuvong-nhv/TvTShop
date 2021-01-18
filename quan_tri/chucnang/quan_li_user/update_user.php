@@ -11,12 +11,10 @@ if (isset($_GET['id'])) {
         ?>
 
         <div class="user-info">
-            <h2>THÔNG TIN TÀI KHOẢN</h2>
+            
             <form action="?menu=exec_update_user&id=<?php echo $row['user']; ?>" method="POST">
                 <div class="container">
-                    <h1>Khách hàng: <?php echo $row['hoten'] ?></h1>
-                    <hr>
-
+                    <h2>THÔNG TIN TÀI KHOẢN</h2>
                     <label for="user"><b>Tên Đăng Nhập</b></label>
                     <input type="text" style="background: #555;color: #ddd" disabled="" name="username" required placeholder="Nhập Tên Đăng Nhập ..." value="<?php echo $row['user'] ?>">
 

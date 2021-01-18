@@ -76,6 +76,7 @@ if (isset($_SESSION['giohang'])) {
                     <td colspan="5" align="center"><form action="?menu=thanh_toan" method="post"><input type="submit" class="btn btn-primary" name="thanh_toan" value="Thanh toán"></form></td>
                 </tr>
             </table>
+            
             <?php
             foreach ($_SESSION['giohang'] as $masp => $sp) {
                 $id_array[] = $masp;
@@ -103,7 +104,7 @@ if (isset($_SESSION['giohang'])) {
 
             foreach ($resultSet as $row) {
                 ?>
-                <form method = "post" action = "?menu=ngan_luong">
+                <form method = "post" action = "?menu=ngan_luong ">
                     <input type = hidden name = "name" value = "<?php echo $row['hoten']; ?>"/>
                     <input type = hidden name = "email" value = "<?php echo $row['email']; ?>" />
                     <input type = hidden name = "sdt" value = "<?php echo $row['sdt']; ?>" />

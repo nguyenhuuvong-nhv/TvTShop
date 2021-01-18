@@ -11,6 +11,7 @@ if (isset($_POST['submit'])) {
         $_SESSION['username'] = $row['user'];
         $_SESSION['pass'] = $row['pass'];
         $_SESSION['hoten'] = $row['hoten'];
+        $_SESSION['ma_quyen']= $row['ma_quyen'];
     }
     if (isset($_SESSION['username'])) {
         echo "<script> alert('Đăng nhập thành công');</script>";

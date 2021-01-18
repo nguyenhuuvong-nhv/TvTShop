@@ -7,18 +7,18 @@ if (isset($login)) {
 	if (isset($_POST['submit'])) {
 		include('../database/connect.php');
 		$name = $_POST['username'];
-		$pass = $_POST['password'];
-		$sqlquery = "select * from quan_tri where name= ? and pass= ?";
+		$pass = md5(md5($_POST['password']));
+		$sqlquery = "select * from nguoidung where user= ? and pass= ? and ma_quyen !=3";
 		$stmt = $db->prepare($sqlquery);
 		$stmt->bindParam(1, $name);
 		$stmt->bindParam(2, $pass);
 		$stmt->execute();
 		$resultSet = $stmt->fetchAll();
 		foreach ($resultSet as $row) {
-			$_SESSION['user'] = $row['name'];
+			$_SESSION['user'] = $row['user'];
 			$_SESSION['pass'] = $row['pass'];
-                        $_SESSION['quyen_truy_cap']= $row['quyen_truy_cap'];
-		}
+                        $_SESSION['quyen_truy_cap']= $row['ma_quyen'];
+                     }
 		if (isset($_SESSION['user'])) {
 			echo "<script>alert('Login Successfull.'); </script>";
 			include('chucnang/quan_tri/trang_chu.php');

@@ -43,10 +43,10 @@
         <input class="form-control" type="text" name="number" placeholder="Số điện thoại.." required pattern="[0-9]+" minlength="10" maxlength="10"/><br>
         </tr>
         <tr>
-        <input class="form-control" type="password" name="password1" placeholder="Mật khẩu.." required  minlength="6"/><br>
+        <input class="form-control" type="password" name="password1" placeholder="Mật khẩu.." required  minlength="5"/><br>
         </tr>
         <tr>
-        <input class="form-control" type="password" name="password" placeholder="Xác nhận mật khẩu.." required minlength="6"/><br>
+        <input class="form-control" type="password" name="password" placeholder="Xác nhận mật khẩu.." required minlength="5"/><br>
         </tr>
         <tr >
             <td colspan="2" align="center"> <input type="submit" name="submit" class="btn btn-primary" value="Đăng Ký"><br> </td>
